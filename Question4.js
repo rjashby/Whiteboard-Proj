@@ -24,3 +24,31 @@ if (str == result) {
     return false;
   }
 }
+
+// USING SET METHOD 2
+
+function setMethod2(str)
+{
+  let set = new Set(str)
+  if (set.size == str.length)
+  {
+    return true
+  }
+  else
+  {
+    return false
+  }
+}
+
+// FOR LOOP
+
+function forLoopMethod(str) {
+  for (let i = 0; i < str.length; i++) {
+    for (let j = i + 1; j < str.length; j++) {
+      if (str[i] == str[j]) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
