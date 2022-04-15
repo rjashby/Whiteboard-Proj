@@ -51,4 +51,4 @@ function forLoopMethod(str) {
     }
   }
   return true;
-}
+} 
