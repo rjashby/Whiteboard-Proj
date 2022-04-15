@@ -1,5 +1,3 @@
-let str = "hello today sir";
-
 function q1(str) {
   let strArray = str.split("");
   let result = [];
@@ -21,4 +19,5 @@ function replaceString(str) {
   return result;
 }
 
-// strArray.forEach(function(letter, i)
+// WITH RECURSION
+
