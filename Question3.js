@@ -9,11 +9,10 @@
 // FOR LOOP
 
 function compressStr(str) {
-  let copy = str;
   counter = 1;
   let result = [];
   for (let i = 0; i < str.length; i++) {
-    if (str[i] == copy[i+1]) {
+    if (str[i] == str[i+1]) {
       counter ++;
     } else {
       if (counter > 1) {
