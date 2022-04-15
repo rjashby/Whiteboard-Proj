@@ -17,7 +17,7 @@ let input2 = "copyright"
 function setMethod(str) {
 let set = new Set(str);
 let result="";
-set.forEach(value => result = result+""+ value);
+set.forEach(value => result = result + "" + value);
 if (str == result) {
   return true;
   } else {
