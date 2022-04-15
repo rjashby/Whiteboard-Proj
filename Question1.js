@@ -14,7 +14,6 @@ function q1(str) {
   for(let i = 0; i < strArray.length; i++) {
     if (strArray[i] === " ") {
       result.push("%20")
-      console.log(strArray[i]);
     } else {
       result.push(strArray[i]);
     }
@@ -31,3 +30,14 @@ function replaceString(str) {
 
 // WITH RECURSION
 
+function replace(input) {
+  let a = input.split("")
+  let b = a.indexOf(" ")
+  a[b] = "%20"
+  console.log(a)
+  if (a.includes(" ")){
+      return replace(a.join(""))
+  } else {
+      return a.join("")
+  }
+}
