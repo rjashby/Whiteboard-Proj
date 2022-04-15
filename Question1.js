@@ -8,6 +8,8 @@
 
 // Output: "Jasmine%20Ann%20Jones"
 
+// METHOD 1
+
 function q1(str) {
   let strArray = str.split("");
   let result = [];
@@ -22,6 +24,7 @@ function q1(str) {
   return final;
 }
 
+// METHOD 2
 
 function replaceString(str) {
   const result = str.split(" ").join("%20");

@@ -9,7 +9,7 @@
 // FOR LOOP
 
 function compressStr(str) {
-  let copy = str
+  let copy = str;
   counter = 1;
   let result = [];
   for (let i = 0; i < str.length; i++) {
