@@ -8,3 +8,33 @@
 
 // Output: "Jasmine%20Ann%20Jones"
 
+let input: "Hello there fine person";
+
+function one(input){
+  let result = input.split(" ").join("%20");
+  return result;
+}
+
+function two(input){
+  let result [];
+  let strArray = input.split("");
+  for (let i = 0; i < input.length; i++){
+    if (strArray[i] = " "){
+      result.push("%20);
+    } else {
+      result.push(strArray[i]);
+    }
+  }
+  return strArray.join("");
+}
+
+function recursive(input){
+  let strArray = input.split("");
+  let myVar = strArray.indexOf(" ");
+  strArray[myVar]= "%20";
+  if (strArray.include(" "){
+    return recursive(strArray.join(""))
+  } else {
+    return strArray.join("");
+  }
+}
